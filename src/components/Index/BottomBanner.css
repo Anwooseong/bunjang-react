@@ -1,0 +1,11 @@
+.under_banner_container {
+    outline: none;
+    width: 1024px;
+}
+
+.under_banner_container .under_banner_image{
+    outline: none;
+    margin-top: 15px;
+    width: 1024px;
+    height: 200px;
+}

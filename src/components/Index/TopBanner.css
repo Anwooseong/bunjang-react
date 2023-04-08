@@ -1,0 +1,30 @@
+.main .top_banner_container {
+    outline: none;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-between; */
+    position: relative;
+    width: 1024px;
+    height: 300px;
+    /* background-size: contain;
+    background-image: url('https://media.bunjang.co.kr/images/nocrop/959246584_w2058.jpg'); */
+}
+
+.top_banner_container .top_banner_image{
+    outline: none;
+    width: 1024px;
+    height: 300px;
+    z-index: -1;
+}
+
+.left_shift_banner {
+    margin: 0 20px;
+    position: relative;
+    top: -170px;
+}
+.right_shift_banner {
+    margin: 0 20px;
+    position: relative;
+    top: -170px;
+    right: -870px;
+}

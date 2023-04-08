@@ -1,0 +1,17 @@
+.top_menu {
+    border-bottom: 1px solid rgb(238, 238, 238);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+}
+
+.top_menu .top_menu_container {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    width: 1024px;
+    margin: 0 auto;
+    justify-content: space-between;
+}

@@ -1,0 +1,17 @@
+.recommend_container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.recommend_container .recommend_title {
+    margin: 70px 0 20px 0;
+    font-size: x-large;
+}
+
+.recommend_container .grid_container{
+  display: grid;
+  width: 1024px;
+  grid-template-columns: repeat(5, 1fr);
+}
+

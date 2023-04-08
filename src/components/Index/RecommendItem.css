@@ -1,0 +1,30 @@
+.product_item {
+    background-color: white;
+    border: 1.5px solid rgb(238, 238, 238);
+    margin: 0 10px 10px 0;
+}
+
+.product_content {
+    display: block;
+    overflow: hidden;
+    width: 194px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.product_content .product_title {
+    padding: 10px 5px;
+    display: block;
+    overflow: hidden;
+    width: 194px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.product_content .product_detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5px 5px 5px 5px;
+}
