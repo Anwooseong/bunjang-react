@@ -1,0 +1,72 @@
+.profile_right_container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 30px 20px 0px 20px;
+
+}
+
+.name {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name_left {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.shop_name_modify {
+    border: 1px solid rgb(238, 238, 238);
+    color: gray;
+    font-weight: bold;
+}
+
+.ok {
+    color: white;
+    background-color: rgb(207, 207, 84);
+    border-radius: 9px;
+    padding: 2px 5px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.name_right {
+    font-weight: bold;
+    margin-right: 25px;
+    font-size: 12px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+    border-top: 1px solid rgb(238, 238, 238);
+    border-bottom: 1px solid rgb(238, 238, 238);
+    padding: 15px 0;
+}
+
+.shop_text {
+    color: gray;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.shop_detail_text {
+    color: rgb(44, 43, 43);
+    font-weight: bold;
+    margin-right: 15px;
+}
+.introduction {
+    height: 120px;
+}
+
+.modify_btn {
+    color: gray;
+    padding: 2px 5px;
+    border: 1px solid rgb(238, 238, 238);
+    margin: 10px 0px;
+}

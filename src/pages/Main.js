@@ -1,9 +1,11 @@
-import BottomBanner from "./BottomBanner";
-import Recommend from "./Recommend";
-import TopBanner from "./TopBanner";
+import BottomBanner from "../components/Index/BottomBanner";
+import Recommend from "../components/Index/Recommend";
+import TopBanner from "../components/Index/TopBanner";
 import "./Main.css";
-import BottomMenu from "./BottomMenu";
-import TopMenu from "./TopMenu";
+import BottomMenu from "../components/Index/BottomMenu";
+import TopMenu from "../components/Index/TopMenu";
+import Footer from "../components/Index/Footer";
+
 let DUMMY_ITEMS = [];
 
 const Main = (props) => {
@@ -36,6 +38,7 @@ const Main = (props) => {
         <BottomBanner />
         <Recommend items={DUMMY_ITEMS} />
       </section>
+      <Footer />
     </div>
   );
 };

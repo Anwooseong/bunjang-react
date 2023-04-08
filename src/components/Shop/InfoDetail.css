@@ -1,0 +1,35 @@
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0 30px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.title_text {
+    color: red;
+}
+
+.type_container {
+    border: 1px solid rgb(238, 238, 238);
+    padding: 8px 10px 8px 8px;
+    font-size: 13px;
+    font-weight: normal;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    
+}
+
+.all {
+    margin-right: 80px
+}
+
+.content {
+    border-top: 1px solid rgb(238, 238, 238);
+    padding-top: 20px;
+    font-weight: bold;
+    color: gray;
+    height: 500px;
+}

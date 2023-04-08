@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './TopMenu.css'
 
 const TopMenu = (props) => {
@@ -26,9 +27,9 @@ const TopMenu = (props) => {
         </div>
         <div className="top_right">
           <button className="login_create">로그인/회원가입</button>
-          <a className="my_store" href="./shop.html">
+          <Link className="my_store" to="/my-store">
             내상점
-          </a>
+          </Link>
         </div>
       </div>
     </div>
