@@ -1,7 +1,25 @@
 import { Link } from "react-router-dom";
 import "./BottomMenu.css";
+import { useEffect, useRef, useState } from "react";
 
 const BottomMenu = (props) => {
+  let searchRef = useRef(null);
+  // 검색 리스트 렌더링용 (true이면 보여준다)
+  let [inputFocus, setInputFocus] = useState(false);
+
+  useEffect(() => {
+    function handleOutside(e) {
+      // current.contains(e.target) : 컴포넌트 특정 영역 외 클릭 감지를 위해 사용
+      if (searchRef.current && !searchRef.current.contains(e.target)) {
+        setInputFocus(false);
+        console.log("hi");
+      }
+    }
+    document.addEventListener("mousedown", handleOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleOutside);
+    };
+  }, [searchRef]);
 
   return (
     <div className="under_menu">
@@ -14,14 +32,15 @@ const BottomMenu = (props) => {
             alt="번개장터 로고"
           />
         </Link>
-        <div>
+        <div ref={searchRef}>
           <div className="search_container">
             <input
-              type="text"
+              type="type= text/javascript"
               placeholder="상품명, 지역명, @상점명 입력"
               className="search"
               defaultValue={""}
-              onChange={(e) => {
+              onClick={() => {
+                setInputFocus(true);
               }}
               name="s"
             />
@@ -34,33 +53,35 @@ const BottomMenu = (props) => {
               />
             </a>
           </div>
-          <div className="search_drop_down">
-            <div className="search_inner_container">
-              <div className="search_title">
-                <button className="search_text recent_search">
-                  최근검색어
-                </button>
-                <button className="search_text popular_search">
-                  인기검색어
-                </button>
-              </div>
-              <div className="search_content">
-                <div className="search_detail">
-                  <img
-                    src="https://m.bunjang.co.kr/pc-static/resource/fb38b8548f0c80b100ad.png"
-                    width="52"
-                    height="45"
-                    alt="검색어 없음 이미지"
-                  />
-                  최근검색어가 없습니다.
+          {inputFocus && (
+            <div className="search_drop_down">
+              <div className="search_inner_container">
+                <div className="search_title">
+                  <button className="search_text recent_search">
+                    최근검색어
+                  </button>
+                  <button className="search_text popular_search">
+                    인기검색어
+                  </button>
+                </div>
+                <div className="search_content">
+                  <div className="search_detail">
+                    <img
+                      src="https://m.bunjang.co.kr/pc-static/resource/fb38b8548f0c80b100ad.png"
+                      width="52"
+                      height="45"
+                      alt="검색어 없음 이미지"
+                    />
+                    최근검색어가 없습니다.
+                  </div>
                 </div>
               </div>
+              <div className="search_bottom">
+                <button className="search_history">검색어 전체삭제</button>
+                <button className="delete">닫기</button>
+              </div>
             </div>
-            <div className="search_bottom">
-              <button className="search_history">검색어 전체삭제</button>
-              <button className="delete">닫기</button>
-            </div>
-          </div>
+          )}
         </div>
         <div className="under_right_menu">
           <a href="/products/new" className="sell">
