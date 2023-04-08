@@ -2,6 +2,8 @@ import BottomBanner from "./BottomBanner";
 import Recommend from "./Recommend";
 import TopBanner from "./TopBanner";
 import "./Main.css";
+import BottomMenu from "./BottomMenu";
+import TopMenu from "./TopMenu";
 let DUMMY_ITEMS = [];
 
 const Main = (props) => {
@@ -21,11 +23,20 @@ const Main = (props) => {
   }
 
   return (
-    <section className="main">
-      <TopBanner />
-      <BottomBanner />
-      <Recommend items={DUMMY_ITEMS} />
-    </section>
+    <div className="total">
+      <header className="header">
+        <TopMenu />
+      </header>
+      <div className="header">
+        <BottomMenu />
+      </div>
+
+      <section className="main">
+        <TopBanner />
+        <BottomBanner />
+        <Recommend items={DUMMY_ITEMS} />
+      </section>
+    </div>
   );
 };
 
