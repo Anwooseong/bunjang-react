@@ -1,14 +1,14 @@
-import "./Footer.css";
+import styles from "./Footer.module.css";
 
 const Footer = (props) => {
   return (
-    <footer className="footer">
-      <div className="footer_menu_container">
-        <div className="footer_menu">
+    <footer className={styles['footer']}>
+      <div className={styles['footer_menu_container']}>
+        <div className={styles['footer_menu']}>
           <a
             href="https://bgzt.co.kr/"
             target="_blank"
-            className="menu_item"
+            className={styles['menu_item']}
             rel="noreferrer"
           >
             회사소개
@@ -17,7 +17,7 @@ const Footer = (props) => {
             href="https://terms.bunjang.co.kr/terms/service.html"
             target="_blank"
             rel="noreferrer"
-            className="menu_item"
+            className={styles['menu_item']}
           >
             이용약관
           </a>
@@ -25,7 +25,7 @@ const Footer = (props) => {
             href="https://terms.bunjang.co.kr/terms/service-policy.html"
             target="_blank"
             rel="noreferrer"
-            className="menu_item"
+            className={styles['menu_item']}
           >
             운영정책
           </a>
@@ -33,7 +33,7 @@ const Footer = (props) => {
             href="https://terms.bunjang.co.kr/terms/privacy.html"
             target="_blank"
             rel="noreferrer"
-            className="menu_item"
+            className={styles['menu_item']}
           >
             <b>개인정보처리방침</b>
           </a>
@@ -41,7 +41,7 @@ const Footer = (props) => {
             href="https://terms.bunjang.co.kr/terms/youth-policy.html"
             target="_blank"
             rel="noreferrer"
-            className="menu_item"
+            className={styles['menu_item']}
           >
             청소년보호정책
           </a>
@@ -49,17 +49,17 @@ const Footer = (props) => {
             href="https://ads-partner.bunjang.co.kr"
             target="_blank"
             rel="noreferrer"
-            className="menu_item"
+            className={styles['menu_item']}
           >
             광고제휴
           </a>
         </div>
       </div>
       <div className="sc-eTuwsz cJrJVo">
-        <div className="footer_top_container">
-          <div className="left_container">
-            <div className="fisrt_container">
-              <div className="bungae_info">번개장터(주) 사업자정보</div>
+        <div className={styles['footer_top_container']}>
+          <div className={styles['left_container']}>
+            <div className={styles['fisrt_container']}>
+              <div className={styles['bungae_info']}>번개장터(주) 사업자정보</div>
               <div className="sc-hZSUBg bWusqD">
                 대표이사 : 최재화,
                 강승현&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;개인정보보호책임자 :
@@ -88,17 +88,17 @@ const Footer = (props) => {
                 </a>
               </div>
             </div>
-            <div className="second_container">
+            <div className={styles['second_container']}>
               <div className="sc-hZSUBg bWusqD sc-cMhqgX fhmeEc">
                 <div>
-                  <span className="place_text">번개장터(주)더현대서울점</span>
+                  <span className={styles['place_text']}>번개장터(주)더현대서울점</span>
                   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;최재화,
                   강승현&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;365-85-01581
                   <br />
                   서울특별시 영등포구 여의대로 108, 지하2층(여의도동, 파크원)
                 </div>
                 <div>
-                  <span className="place_text">번개장터(주)코엑스점</span>
+                  <span className={styles['place_text']}>번개장터(주)코엑스점</span>
                   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;최재화,
                   강승현&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;142-85-27412
                   <br />
@@ -106,7 +106,7 @@ const Footer = (props) => {
                   코엑스)
                 </div>
                 <div>
-                  <span className="place_text">번개장터(주)센터필드점</span>
+                  <span className={styles['place_text']}>번개장터(주)센터필드점</span>
                   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;최재화,
                   강승현&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;808-85-01905
                   <br />
@@ -116,7 +116,7 @@ const Footer = (props) => {
               </div>
             </div>
           </div>
-          <div className="third_container">
+          <div className={styles['third_container']}>
             <div className="sc-iQNlJl jSuVsI">
               <div className="people_center">
                 고객센터&nbsp;
@@ -135,11 +135,11 @@ const Footer = (props) => {
                 </svg>
               </div>
               <div className="sc-hZSUBg bWusqD">
-                <strong className="bigger_text">1670-2910</strong>
+                <strong className={styles['bigger_text']}>1670-2910</strong>
                 <br />
                 운영시간 9시 - 18시 (주말/공휴일 휴무, 점심시간 12시 - 13시)
                 <br />
-                <div className="center_a">
+                <div className={styles['center_a']}>
                   <a
                     href="https://help.bunjang.co.kr/notice"
                     style={{ textDecoration: "underline", marginRight: "15px" }}
@@ -162,7 +162,7 @@ const Footer = (props) => {
               </div>
             </div>
             <div className="sc-iQNlJl jSuVsI">
-              <div className="bank_info">우리은행 채무지급보증 안내</div>
+              <div className={styles['bank_info']}>우리은행 채무지급보증 안내</div>
               <div className="sc-hZSUBg bWusqD">
                 번개장터㈜는 회사가 직접 판매하는 상품에 한하여, 고객님의 현금
                 결제 금액에 대해 우리은행과 채무지급보증 계약을 체결하여
@@ -175,23 +175,23 @@ const Footer = (props) => {
                 >
                   서비스 가입사실 확인
                 </a>
-                <div className="rights-copy">
+                <div className={styles['rights-copy']}>
                   Ⓒ Bungaejangter. Inc All rights reserved.
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="footer_bottom_container">
+        <div className={styles['footer_bottom_container']}>
           <div
-            className="bottom_left_container"
+            className={styles['bottom_left_container']}
             style={{ marginRight: "10px" }}
           >
             <a
               href="https://isms.kisa.or.kr/main/ispims/issue/?certificationMode=list&amp;crtfYear=&amp;searchCondition=2&amp;searchKeyword=%EB%B2%88%EA%B0%9C%EC%9E%A5%ED%84%B0+%EC%A3%BC%EC%8B%9D%ED%9A%8C%EC%82%AC&amp;__encrypted=U8oaEwTLg12yqNDZuCwRPMiDRLgcrZjlbxomU5uctoZc1kXWONBhXaf0KhG%2BaV6wpp2zSeTry6yKT1QpQPP4n6Wl4JbzPyTKSn7s1FoRr90UnnwTp%2BW928V1TpyMuwFVMU8D270RkIg564CRAF0bUnkvpnfyAxjhbyn0pSpjvw%2BMlXuoQnR3oJUfvVi%2B1dac8Gnd7jHhSmiDLOX09CuWhVRPx40RuMcaT%2FHbItyyZvQECWvcAvRb36C1zB%2FnwnWRJNfv74iaCKBgpNE%2BERnypNyBfcqQSKf%2BfDsW9aHcpTOO1K747YgBrg%3D%3D"
               target="_blank"
               rel="noreferrer"
-              className="bottom_left_container"
+              className={styles['bottom_left_container']}
             >
               <img
                 src="https://m.bunjang.co.kr/pc-static/resource/ee757469a142ab4f2f48.png"

@@ -1,21 +1,21 @@
-import './RecommendItem.css'
+import styles from './RecommendItem.module.css'
 
 const RecommendItem = (props) => {
   return (
-    <a className="product_item" href={props.href}>
+    <a className={`${styles["product_item"]}`} href={props.href}>
       <img
         src={props.src}
         width="194"
         height="194"
         alt={props.alt}
       />
-      <div className="product_content">
-        <div className="product_title">
+      <div className={`${styles["product_content"]}`}>
+        <div className={`${styles["product_title"]}`}>
           <span>{props.title}</span>
         </div>
-        <div className="product_detail">
-          <span className="product_price">{props.price}</span>
-          <span className="product_time">{props.time}</span>
+        <div className={`${styles["product_detail"]}`}>
+          <span className={`${styles["product_price"]}`}>{props.price}</span>
+          <span className={`${styles["product_time"]}`}>{props.time}</span>
         </div>
       </div>
     </a>

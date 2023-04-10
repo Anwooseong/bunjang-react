@@ -1,15 +1,15 @@
 import LikeItems from "./LikeItems";
-import './Recent.css'
+import styles from './Recent.module.css'
 import RecentItems from "./RecentItems";
 
 const Recent = (props) => {
   return (
-    <div className="recent">
+    <div className={styles["recent"]}>
       <div class="sc-kgAjT Hmoi">
         <LikeItems />
         <RecentItems />
-        <div className="top_container">
-          <button className="top_text">TOP</button>
+        <div className={styles["top_container"]}>
+          <button className={styles["top_text"]}>TOP</button>
         </div>
       </div>
     </div>

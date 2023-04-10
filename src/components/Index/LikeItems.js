@@ -1,8 +1,8 @@
-import './LikeItems.css'
+import styles from './LikeItems.module.css'
 
 const LikeItems = (props) => {
   return (
-    <div className="like_container">
+    <div className={styles["like_container"]}>
       <div className="sc-ksYbfQ bQCLyJ" style={{fontWeight: "bold"}}>
         찜한상품
       </div>

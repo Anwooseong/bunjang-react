@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./TopBanner.css";
+import styles from "./TopBanner.module.css";
 
 const imageList = [
   "https://media.bunjang.co.kr/images/nocrop/926900341_w2058.jpg",
@@ -28,13 +28,13 @@ const TopBanner = (props) => {
   }, []);
 
   return (
-    <div className="top_banner_container">
+    <div className={`${styles["top_banner_container"]}`}>
       <img
         src={imageList[imageIdx]}
-        className="top_banner_image"
+        className={`${styles["top_banner_image"]}`}
         alt="이미지"
       />
-      <button className="left_shift_banner" onClick={onLeftBtnHandler}>
+      <button className={`${styles["left_shift_banner"]}`} onClick={onLeftBtnHandler}>
         <img
           src="https://m.bunjang.co.kr/pc-static/resource/2c3876a99680b4223594.png"
           alt="왼쪽 방향"
@@ -42,7 +42,7 @@ const TopBanner = (props) => {
           height="30px"
         />
       </button>
-      <button className="right_shift_banner" onClick={onRightBtnHandler}>
+      <button className={`${styles["right_shift_banner"]}`} onClick={onRightBtnHandler}>
         <img
           src="https://m.bunjang.co.kr/pc-static/resource/09961a6784ff4792906f.png"
           alt="오른쪽 방향"

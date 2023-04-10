@@ -5,6 +5,7 @@ import "./Main.css";
 import BottomMenu from "../components/Index/BottomMenu";
 import TopMenu from "../components/Index/TopMenu";
 import Footer from "../components/Index/Footer";
+import Recent from "../components/Index/Recent";
 
 let DUMMY_ITEMS = [];
 
@@ -32,7 +33,7 @@ const Main = (props) => {
       <div className="header">
         <BottomMenu />
       </div>
-
+      <Recent />
       <section className="main">
         <TopBanner />
         <BottomBanner />
