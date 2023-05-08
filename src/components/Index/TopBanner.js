@@ -9,6 +9,7 @@ const imageList = [
 
 const TopBanner = (props) => {
   const [imageIdx, setImageIdx] = useState(0);
+  const [effectCheck, setEffectCheck] = useState(false)
 
   const onLeftBtnHandler = () => {
     setImageIdx(
@@ -20,15 +21,22 @@ const TopBanner = (props) => {
     setImageIdx((prevImageIdx) => (prevImageIdx + 1) % imageList.length);
   };
 
+  const useEffectCheckHandler = () => {
+    setEffectCheck((prevState) => !prevState)
+  }
+
   useEffect(() => {
     const intervalId = setInterval(onRightBtnHandler, 3000); // 3초마다 이미지를 오른쪽으로 이동
+    console.log('마운트될때 코드')
+    console.log(effectCheck)
     return () => {
       clearInterval(intervalId); // 컴포넌트가 언마운트되면 인터벌을 클리어
+      console.log('클린업 함수 호출')
     };
-  }, []);
+  }, [effectCheck]);
 
   return (
-    <div className={`${styles["top_banner_container"]}`}>
+    <div className={`${styles["top_banner_container"]}`} onClick={useEffectCheckHandler}>
       <img
         src={imageList[imageIdx]}
         className={`${styles["top_banner_image"]}`}

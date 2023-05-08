@@ -5,7 +5,7 @@ import RecentItems from "./RecentItems";
 const Recent = (props) => {
   return (
     <div className={styles["recent"]}>
-      <div class="sc-kgAjT Hmoi">
+      <div className="sc-kgAjT Hmoi">
         <LikeItems />
         <RecentItems />
         <div className={styles["top_container"]}>

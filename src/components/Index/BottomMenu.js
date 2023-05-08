@@ -12,7 +12,6 @@ const BottomMenu = (props) => {
       // current.contains(e.target) : 컴포넌트 특정 영역 외 클릭 감지를 위해 사용
       if (searchRef.current && !searchRef.current.contains(e.target)) {
         setInputFocus(false);
-        console.log("hi");
       }
     }
     document.addEventListener("mousedown", handleOutside);
